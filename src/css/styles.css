@@ -69,8 +69,15 @@ input::placeholder {
 }
 
 .js-greeting,
-.js-nameForm {
+.js-nameForm,
+.js-motto,
+.js-encourage {
     display: none;
+}
+
+.js-encourage {
+    margin: 2rem 0;
+    font-family: serif;
 }
 
 .showing {
