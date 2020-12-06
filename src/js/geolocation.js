@@ -2,7 +2,7 @@ const div = document.querySelector(".js-weather"),
     p = div.querySelector("p");
 
 const COORDS = "coords";
-const API_KEY = "";
+const API_KEY = "9bb8e09afb703a31d55f32428e0a547e";
 
 function saveCoords(coordsObj) {
     localStorage.setItem(COORDS, JSON.stringify(coordsObj));
