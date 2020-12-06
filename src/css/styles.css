@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 2px #4d4d4d;
+    background-color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bg-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+.js-clock h1 {
+    font-size: 7rem;
+}
+
+input {
+    padding: 1.2rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    border-bottom: 3px solid #ffffff;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.js-greeting {
+    font-size: 7.5rem;
+    text-align: center;
+}
+
+.js-greeting,
+.js-nameForm {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.todoList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+}
+
+.todoList h3 {
+    font-size: 2.3rem;
+}
+
+.todoList>* {
+    margin: 3rem;
+}
+
+ul {
+    list-style: none;
+    font-size: 2rem;
+}
+
+ul li span:nth-child(3) {
+    margin-left: 1rem;
+}
+
+.js-weather {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.js-weather img {
+    width: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .js-clock h1 {
+        font-size: 5rem;
+    }
+    .js-greeting {
+        font-size: 5rem;
+    }
+    .todoList {
+        width: 100%;
+    }
+    .todoList>* {
+        margin: 3rem 1rem;
+    }
+}
